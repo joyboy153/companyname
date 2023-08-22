@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans' , sans-serif;
+}
+body{
+height: 100vh;
+background: url(D:/yassin/coding/4code/bg.jpg) no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+header{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+background: transparent;
+backdrop-filter: blur(15px);
+box-shadow: 0 10px 10px rgb(126, 142, 163);
+}
+.header{
+width:100%;
+display: flex;
+justify-content: space-between;
+margin: 10px 15px 10px 15px;
+}
+a{
+color: #fff;
+text-decoration: none;
+transition: .2s;
+}
+a:hover{
+color: orange;
+}
+.header .logo{
+font-size: 1.5rem;
+font-weight: 700;
+margin-top: 3px;
+margin-left: 4.5rem;
+}
+.settings a{
+font-size: 1.6rem;
+font-weight: 500;
+margin: 20px;
+}
+.search{
+position: relative;
+width: 500px;
+}
+.search input{
+width: 100%;
+padding: 5px 10px 5px 25px ;
+border-radius: 20px;
+border: 1px solid gray;
+}
+.search .sett{
+position: absolute;
+left: 10px;
+top: 20%;
+color: gray;
+}
+.hyber-links{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.hyber-links a{
+font-size: 1.3rem;
+font-weight: 500;
+margin: 15px;
+}
+.boss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.cloth-photos{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cloth-photos img{
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.cloth-photos .img1 img{
+    border: 1px solid #fff;
+    border-radius: 10px 10px 0 10px;
+}
+.cloth-photos .img2 img{
+    border: 1px solid #fff;
+    border-radius: 10px 10px 10px 0;
+}
+.cloth-photos .img3 img{
+    border: 1px solid #fff;
+    border-radius: 10px 0 10px 10px;
+}
+.cloth-photos .img4 img{
+    border: 1px solid #fff;
+    border-radius: 0 10px 10px 10px;
+}
+.cloth1{
+    border: 1px solid#fff;
+    width: 20%;
+    height: 453px;
+    margin: 20px 10px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(107, 118, 162);
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.cloth1.open{
+    height: 460px;
+}
+
+.sale1{
+    border: 1px solid#fff;
+    width: 20%;
+    margin: 20px 10px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(107, 118, 162);
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+.sale1.open{
+    height: 460px;
+}
+.sport1{
+    border: 1px solid#fff;
+    width: 20%;
+    margin: 20px 10px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(107, 118, 162);
+     transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     overflow: hidden;
+}
+.sport1.open{
+height: 460px;
+}
+.techno1{
+    border: 1px solid#fff;
+    width: 20%;
+    margin: 20px 10px 0 10px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(107, 118, 162);
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+}
+.techno1.open{
+height: 460px;
+}
+.cloth1 h3{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.cloth1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px;
+}
+.sale1 h3{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.sale1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px;
+}
+.sport1 h3{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.sport1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px;
+}
+.techno1 h3{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+}
+.techno1 p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    display: none;
+}
+.icons i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: .3s;
+}
+.icons i:hover{
+    scale: 1.2;
+    color: orange;
+}
+.icons i:active{
+    scale: 1;
+}
+@media (max-width:1350px){
+    .boss{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .cloth1,
+    .sale1,
+    .sport1,
+    .techno1{
+        width: 40%;
+        height: fit-content;
+    }
+    .cloth-photos .img1 img{
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+    .cloth-photos .img2 img{
+        border: 1px solid #fff;
+        border-radius: 10px ;
+    }
+    .cloth-photos .img3 img{
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+    .cloth-photos .img4 img{
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
+}
+@media(max-width:1000px){
+    .boss{
+        display: flex;
+        flex-direction: column;
+    }
+    .cloth1,
+    .sale1,
+    .sport1,
+    .techno1{
+        width: unset;
+        height: fit-content;
+    }
+}
+@media(max-width:430px){
+    .boss{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cloth1,
+    .sale1,
+    .sport1,
+    .techno1{
+        width: 300px;
+        height: 0;
+        border: none;
+        margin-top: 0;
+    }
+    .cloth1.open,
+    .sale1.open,
+    .sport1.open,
+    .techno1.open{
+        width: unset;
+        border: 1px solid #fff;
+    }
+    .icons{
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+}
